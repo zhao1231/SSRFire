@@ -1,48 +1,45 @@
-gau(){
-	tools/gau/./main $1
-}
-gau_s(){
-	tools/gau/./main --subs $1
-}
+#Replace /path/to/ with the specific directory where the tool is installed
+
+#If you already have configured paths for any of the tools, replace that code with the below one.
 
 ffuf(){
-	tools/ffuf/./main -u $1 -w $2 -b $3 -c -t 100 
-}
-openredirex(){
-	python3 tools/OpenRedireX/openredirex.py -l $1 -p $2
-}
-qsreplace(){
-	tools/qsreplace/./main $1
-}
-gau(){
-	tools/gau/./main $1
-}
-gau_s(){
-	tools/gau/./main --subs $1
+
+        echo "Usage: ffuf https://www.domain.com/FUZZ payloads.txt"
+
+        /path/to/ffuf/./main -u $1 -w $2 -b $3 -c -t 100
+
 }
 
-ffuf(){
-	tools/ffuf/./main -u $1 -w $2 -b $3 -c -t 100 
-}
-openredirex(){
-	python3 tools/OpenRedireX/openredirex.py -l $1 -p $2
-}
-qsreplace(){
-	tools/qsreplace/./main $1
-}
+ 
+
 gau(){
-	tools/gau/./main $1
-}
-gau_s(){
-	tools/gau/./main --subs $1
+
+        echo "Usage: gau domain.com"
+
+        /path/to/gau/./main $1
+
 }
 
-ffuf(){
-	tools/ffuf/./main -u $1 -w $2 -b $3 -c -t 100 
+ 
+
+gau_s(){
+
+/path/to/gau/./main --subs $1
+
 }
+
+ 
+
 openredirex(){
-	python3 tools/OpenRedireX/openredirex.py -l $1 -p $2
+
+        echo "Usage: openredirex urls.txt payloads.txt"
+
+        python3 /path/to/OpenRedireX/openredirex.py -l $1 -p $2 --keyword FUZZ
+
 }
+
 qsreplace(){
-	tools/qsreplace/./main $1
+
+/path/to/qsreplace/./main $1
+
 }
